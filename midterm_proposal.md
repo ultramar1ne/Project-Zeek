@@ -1,24 +1,42 @@
 ## -1. Background
+Zeek is important blabla...
 
-## 2. Goals
+Containerized Zeek is wildly used .... So we want to do so.
+
+## 0. Goals
 ### at Least
 ????
 ### Ambitious
 ????
 
-## 0. What to Evaluate
-Metrics/Benchmark
+## 1. What to Evaluate
+Metric/Benchmark
+
+### Definition
+1. Traffic Rate : 
+
+    Number of Packets Sent to Zeek per minute
+3. Packet Arrival Rate:
+
+    (Number of packets shown in Zeek's log) / (Total Number)
+
+4. Intrusion Detection Accuracy: 
+
+    (Correctly Detected Intrusions) / (Total Number of Intrusions)
+
 
 #### Single Zeek Container
 
-1. 【Packet Arrival Rate】and【Intrusion Detection Accuracy】when running Zeek on single mode
-2. 【Highest packet Processing Rate】which single Zeek can maintain the above two metrics
+1. 【Packet Arrival Rate】
+2. 【Intrusion Detection Accuracy】
+3. 【Highest Traffic Rate】with which single Zeek can maintain the above two metrics
 
-#### Multiple Zeek Containers (Cluster)
-1. 【Minimum Number of Containers】 to maintain the [Packet Arrival Rate]
-2. whether 【Intrusion Detection Accuracy】will decrease as [Packet Processing Rate] increases.
+#### Multiple Zeek Containers (Cluster?)
+1. whether 【Packet Arrival Rate】will decrease as [Traffic Rate] increases.
+2. whether 【Intrusion Detection Accuracy】will decrease as [Traffic Rate] increases.
+3. if so,【Minimum Number of Containers】 to maintain the best performance
 
-## 1. Tools and Datasets
+## 2. Tools and Datasets
 ### Tools:
 
 1. *Zeek* and *Docker* : ofc
@@ -29,11 +47,14 @@ Metrics/Benchmark
 
 ### Datasets:
 #### Pcap:
-[UNSW-NB15](https://cloudstor.aarnet.edu.au/plus/index.php/s/2DhnLGDdEECo4ys?path=%2FUNSW-NB15%20-%20pcap%20files)
+1. [UNSW-NB15](https://cloudstor.aarnet.edu.au/plus/index.php/s/2DhnLGDdEECo4ys?path=%2FUNSW-NB15%20-%20pcap%20files)
 
-A widely used cyber-security dataset. Still updated now. 
+    A widely used cyber-security dataset, still updated now,
 
-Contains both classified *attacks*(DDoS, Scan, Backdoors, ...) and daily normal flows.
+    contains both classified *attacks*(DDoS, Backdoors, ...) and daily normal network flows.
 
-#### ...will be more...
 
+## 3. Related Works
+Paper?
+
+## 4. What we have done 
