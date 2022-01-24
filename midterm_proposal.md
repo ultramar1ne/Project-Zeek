@@ -3,11 +3,27 @@ Zeek is important blabla...
 
 Containerized Zeek is wildly used .... So we want to do so.
 
+### Zeek Architecture
+
+Single Instance Process Flow:
+![](https://docs.zeek.org/en/master/_images/architecture.png)
+
+Cluster Architecture:
+![](https://docs.zeek.org/en/master/_images/deployment.png)
+
+#### Possible Bottlenecks:
+1. Hardware Limitation? ——zeek is single-threaded so may be not
+2. every step in Process Flow
+    —— we want to make sure it's process rate?
+
+
 ## 0. Goals
 ### at Least
 ????
 ### Ambitious
 ????
+
+
 
 ## 1. What to Evaluate
 Metric/Benchmark
@@ -61,6 +77,8 @@ Metric/Benchmark
 
 2. [Analysing performance issues of open-source intrusion detection systems in high-speed networks](https://www.sciencedirect.com/science/article/pii/S2214212619306003?casa_token=8XsfDdqnU1QAAAAA:Hv1Zym3SBlwgFoQE4sJ1qURJleKIN7HhW6wUamBAGpJcR9LreyrbX6SpO39D61fSS-Ls-oMCc7Qo) :
     we did not consider Zeek3 due to the following reasons. First, Zeek only supports Libpcap and PF_RING
+
+This Paper can give us many inspirations
 
 3. [Detection of Brute-Force Attacks in End-to-End Encrypted Network Traffic](https://dl.acm.org/doi/pdf/10.1145/3465481.3470113)
     
