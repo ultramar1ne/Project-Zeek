@@ -56,6 +56,12 @@ Metric/Benchmark
 
 
 ## 3. Related Works
-Paper?
+1. [Zeek-Osquery: Host-Network Correlation for Advanced Monitoring and Intrusion Detection](https://link.springer.com/chapter/10.1007/978-3-030-58201-2_17) :
+    Our evaluation results indicate that a single Zeek instance can manage more than 870 osquery hosts and can attribute more than 96% of TCP connections to host-side applications and users in real-time.
 
+2. [Analysing performance issues of open-source intrusion detection systems in high-speed networks](https://www.sciencedirect.com/science/article/pii/S2214212619306003?casa_token=8XsfDdqnU1QAAAAA:Hv1Zym3SBlwgFoQE4sJ1qURJleKIN7HhW6wUamBAGpJcR9LreyrbX6SpO39D61fSS-Ls-oMCc7Qo) :
+    we did not consider Zeek3 due to the following reasons. First, Zeek only supports Libpcap and PF_RING
+
+3. [Detection of Brute-Force Attacks in End-to-End Encrypted Network Traffic](https://dl.acm.org/doi/pdf/10.1145/3465481.3470113)
+    
 ## 4. What we have done 
