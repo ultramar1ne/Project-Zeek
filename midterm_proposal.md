@@ -35,6 +35,7 @@ Metric/Benchmark
 1. whether 【Packet Arrival Rate】will decrease as [Traffic Rate] increases.
 2. whether 【Intrusion Detection Accuracy】will decrease as [Traffic Rate] increases.
 3. if so,【Minimum Number of Containers】 to maintain the best performance
+【Load Balance?】 other bottle neck?
 
 ## 2. Tools and Datasets
 ### Tools:
